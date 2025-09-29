@@ -8,7 +8,7 @@ O objetivo é desenvolver uma plataforma de venda de jogos digitais e gestão de
 
 - .NET 8
 - Entity Framework
-- PostgreSQL
+- SQL Server
 - Docker
 - Bcrypt + JWT
 - OpenTelemetry
