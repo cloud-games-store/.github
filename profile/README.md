@@ -20,6 +20,20 @@ O objetivo é desenvolver uma plataforma de venda de jogos digitais e gestão de
 - Domain-Driven Design (DDD)
 - Result Pattern
 
+## Recursos Azure
+
+A solução é hospedada na Azure, com os seguintes recursos:
+
+- **Azure Container Registry (ACR):** Armazena as imagens Docker de cada microsserviço (via CI/CD pelo Github Actions).  
+- **App Service (Web App for Containers):** Hospeda cada microsserviço como container.  
+- **API Management (Gateway):** Responsável por centralizar o acesso aos microsserviços, aplicando autenticação, rate limit e roteamento.  
+- **Azure SQL Database:** Banco de dados relacional de cada microsserviço.  
+- **Application Insights:** Centraliza logs e métricas de observabilidade.  
+- **Azure Functions (Payments):** Função serverless para processamento assíncrono de pagamentos.  
+
+### Desenho da arquitetura
+<img width="1316" height="731" alt="image" src="https://github.com/user-attachments/assets/09b15c04-6bca-4843-98dc-67586d2eaf38" />
+
 ## Microsserviços
 
 - [User Service](https://github.com/cloud-games-store/cloud-games-store-users): Microsserviço responsável por lidar com as operações referente aos usuários, incluindo autenticação.
