@@ -22,8 +22,9 @@ O objetivo é desenvolver uma plataforma de venda de jogos digitais e gestão de
 
 ## Microsserviços
 
-- [User Service](https://github.com/cloud-games-store/cloud-games-store-users): Responsável por lidar com as operações referente aos usuários, incluindo autenticação.
-- [Checkout Service](https://github.com/cloud-games-store/cloud-games-store-checkout): Responsável por lidar com o processo de compra de jogos.
+- [User Service](https://github.com/cloud-games-store/cloud-games-store-users): Microsserviço responsável por lidar com as operações referente aos usuários, incluindo autenticação.
+- [Games Service](https://github.com/cloud-games-store/cloud-games-store-games): Microsserviço responsável por lidar com operações de listagem e busca de jogos.
+- [Checkout Service](https://github.com/cloud-games-store/cloud-games-store-checkout): Microsserviço responsável por lidar com o processo de compra de jogos.
 - [Payments Service](https://github.com/cloud-games-store/cloud-games-store-payments): Serverless responsável por simular a etapa de pagamento após confirmado o checkout.
 - [Biblioteca de Logs](https://github.com/cloud-games-store/cloud-games-store-logs): Biblioteca própria utilizada pelos serviços, sendo responsável por centralizar o registro de logs no Application Insights.
 
